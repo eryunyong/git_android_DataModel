@@ -1,0 +1,2 @@
+config wanmode wanmode
+        option type 'subwan'

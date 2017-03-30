@@ -1,0 +1,12 @@
+
+config interface swan1
+	option enable '1'
+	option bindingtype 'tr069'
+	option proto 'dhcp'
+	option keepalive '60'
+	option opt125_data ''
+	option showenable '1'
+	option displayname 'Other'
+	option version 'v4'
+	option ipaddr '192.168.20.12'
+

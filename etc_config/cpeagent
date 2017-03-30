@@ -1,0 +1,29 @@
+
+config cpeagent tr069
+	option acsurl 'http://192.168.4.11:9090/ACS-server/ACS'
+	option cpeport '25100'
+	option cpe_ipaddr '192.168.20.12'
+	option auth '0'
+	option cpeauth_user 'test'
+	option cpeauth_pass 'test'
+	option acsauth_user 'test'
+	option acsauth_pass 'test'
+	option enable '1'
+	option acs_status '0'
+	option inform_status '0'
+	option bs_status '0'
+	option cwmp_status '0'
+
+config cpeagent managementserver
+	option PeriodicInformEnable '1'
+	option PeriodicInformInterval '43200'
+	option PeriodicInformTime '1323903137'
+
+config cpeagent inform
+	option bootstarp '1'
+
+config cpeagent cpe
+	option debugtest '1'
+	option debugip '192.168.20.108'
+
+

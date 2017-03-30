@@ -1,0 +1,13 @@
+
+config system cpe
+	option manufacture 'EBANG'
+	option productclass 'EB-MIG-1800ZG'
+	option oui 'A1B2C4'
+	option softver 'soft_V1.0'
+	option hardwarever 'hw_1.0'
+	option serialnumber '821281000054321'
+	option modelname 'modulename_test1'
+	option soapversion 'V1.0.0'
+	option provisioningcode 'provisioning_code'
+	option devicetype 'dev_type_4_4'
+

@@ -1,0 +1,465 @@
+url.lo: url.c setup.h curl_config.h ../include/curl/curlbuild.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/types.h \
+ /opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include/stddef.h \
+ /opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include/stdint.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/stdint.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/_types.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/_types.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/_wchar_limits.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/android/api-level.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/cdefs.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/cdefs_elf.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/posix_types.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/stddef.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/compiler.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/posix_types.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/types.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/types.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/kernel.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/sysmacros.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/inttypes.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/socket.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/socket.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/socket.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/sockios.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/sockios.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/uio.h \
+ ../include/curl/curlrules.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/stdio.h \
+ /opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include/stdarg.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/assert.h \
+ setup_once.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/stdlib.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/string.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/malloc.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/alloca.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/strings.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/memory.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/ctype.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/errno.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/errno.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/errno.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm-generic/errno.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm-generic/errno-base.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/stat.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/time.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/time.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/stat.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/endian.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/endian.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/endian.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/time.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/siginfo.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm-generic/siginfo.h \
+ /opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include/stdbool.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/netinet/in.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/in.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/byteorder.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/byteorder/little_endian.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/byteorder/swab.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/byteorder/generic.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/in6.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/ipv6.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/netinet/in6.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/unistd.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/select.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/signal.h \
+ /opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include-fixed/limits.h \
+ /opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include-fixed/syslimits.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/limits.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/limits.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/limits.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/internal_types.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/limits.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/syslimits.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/page.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/signal.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm-generic/signal.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/sigcontext.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/ucontext.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/user.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/sysconf.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/capability.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/pathconf.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/netdb.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/arpa/inet.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/net/if.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/if.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/hdlc/ioctl.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/ioctl.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/ioctl.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/ioctl.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm-generic/ioctl.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/ioctls.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/termbits.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/ioctl_compat.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/param.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/param.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/param.h \
+ urldata.h cookie.h ../include/curl/curl.h ../include/curl/curlver.h \
+ ../include/curl/curlbuild.h ../include/curl/curlrules.h \
+ ../include/curl/easy.h ../include/curl/multi.h ../include/curl/curl.h \
+ ../include/curl/typecheck-gcc.h formdata.h timeval.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/zlib.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/zconf.h \
+ http_chunks.h hostip.h hash.h llist.h curl_addrinfo.h asyn.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/setjmp.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/setjmp.h \
+ splay.h imap.h pingpong.h pop3.h smtp.h ftp.h file.h ssh.h http.h rtsp.h \
+ wildcard.h netrc.h sslgen.h transfer.h sendf.h progress.h strequal.h \
+ strerror.h escape.h strtok.h share.h content_encoding.h http_digest.h \
+ http_negotiate.h select.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/poll.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/poll.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/poll.h \
+ /opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/poll.h \
+ multiif.h easyif.h speedcheck.h rawstr.h warnless.h non-ascii.h dict.h \
+ telnet.h tftp.h curl_ldap.h url.h connect.h nonblock.h inet_ntop.h \
+ curl_ntlm.h curl_ntlm_wb.h socks.h curl_rtmp.h gopher.h \
+ ../include/curl/mprintf.h curl_memory.h memdebug.h
+
+setup.h:
+
+curl_config.h:
+
+../include/curl/curlbuild.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/types.h:
+
+/opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include/stddef.h:
+
+/opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include/stdint.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/stdint.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/_types.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/_types.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/_wchar_limits.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/android/api-level.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/cdefs.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/cdefs_elf.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/posix_types.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/stddef.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/compiler.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/posix_types.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/types.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/types.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/kernel.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/sysmacros.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/inttypes.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/socket.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/socket.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/socket.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/sockios.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/sockios.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/uio.h:
+
+../include/curl/curlrules.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/stdio.h:
+
+/opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include/stdarg.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/assert.h:
+
+setup_once.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/stdlib.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/string.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/malloc.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/alloca.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/strings.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/memory.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/ctype.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/errno.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/errno.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/errno.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm-generic/errno.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm-generic/errno-base.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/stat.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/time.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/time.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/stat.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/endian.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/endian.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/endian.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/time.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/siginfo.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm-generic/siginfo.h:
+
+/opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include/stdbool.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/netinet/in.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/in.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/byteorder.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/byteorder/little_endian.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/byteorder/swab.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/byteorder/generic.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/in6.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/ipv6.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/netinet/in6.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/unistd.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/select.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/signal.h:
+
+/opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include-fixed/limits.h:
+
+/opt/cross_tool/AndroidToolChain/lib/gcc/arm-linux-androideabi/4.8/include-fixed/syslimits.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/limits.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/limits.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/limits.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/internal_types.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/limits.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/syslimits.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/page.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/signal.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm-generic/signal.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/sigcontext.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/ucontext.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/user.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/sysconf.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/capability.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/pathconf.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/netdb.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/arpa/inet.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/net/if.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/if.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/hdlc/ioctl.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/ioctl.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/ioctl.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/ioctl.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm-generic/ioctl.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/ioctls.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/termbits.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/ioctl_compat.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/param.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/param.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/param.h:
+
+urldata.h:
+
+cookie.h:
+
+../include/curl/curl.h:
+
+../include/curl/curlver.h:
+
+../include/curl/curlbuild.h:
+
+../include/curl/curlrules.h:
+
+../include/curl/easy.h:
+
+../include/curl/multi.h:
+
+../include/curl/curl.h:
+
+../include/curl/typecheck-gcc.h:
+
+formdata.h:
+
+timeval.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/zlib.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/zconf.h:
+
+http_chunks.h:
+
+hostip.h:
+
+hash.h:
+
+llist.h:
+
+curl_addrinfo.h:
+
+asyn.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/setjmp.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/machine/setjmp.h:
+
+splay.h:
+
+imap.h:
+
+pingpong.h:
+
+pop3.h:
+
+smtp.h:
+
+ftp.h:
+
+file.h:
+
+ssh.h:
+
+http.h:
+
+rtsp.h:
+
+wildcard.h:
+
+netrc.h:
+
+sslgen.h:
+
+transfer.h:
+
+sendf.h:
+
+progress.h:
+
+strequal.h:
+
+strerror.h:
+
+escape.h:
+
+strtok.h:
+
+share.h:
+
+content_encoding.h:
+
+http_digest.h:
+
+http_negotiate.h:
+
+select.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/sys/poll.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/poll.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/linux/poll.h:
+
+/opt/cross_tool/AndroidToolChain/sysroot/usr/include/asm/poll.h:
+
+multiif.h:
+
+easyif.h:
+
+speedcheck.h:
+
+rawstr.h:
+
+warnless.h:
+
+non-ascii.h:
+
+dict.h:
+
+telnet.h:
+
+tftp.h:
+
+curl_ldap.h:
+
+url.h:
+
+connect.h:
+
+nonblock.h:
+
+inet_ntop.h:
+
+curl_ntlm.h:
+
+curl_ntlm_wb.h:
+
+socks.h:
+
+curl_rtmp.h:
+
+gopher.h:
+
+../include/curl/mprintf.h:
+
+curl_memory.h:
+
+memdebug.h:

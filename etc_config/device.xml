@@ -1,0 +1,94 @@
+<TR069 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <trf>
+    <obj name="InternetGatewayDevice">
+      <param name="DeviceSummary" getval_func="CpeGetDeviceSummary"></param>
+      <param name="LANDeviceNumberOfEntries" type="2" getval_func="CpeGetLANDeviceNumberOfEntries"></param>
+      <param name="WANDeviceNumberOfEntries" type="2" getval_func="CpeGetWANDeviceNumberOfEntries"></param>
+      <obj name="DeviceInfo" noti_rw="1">
+        <param name="SpecVersion" getval_func="CpeGetDeviceInfoSpecVersion"/>
+        <param name="HardwareVersion" getval_func="CpeGetDeviceInfoHardwareVersion"></param>
+        <param name="SoftwareVersion" getval_func="CpeGetDeviceInfoSoftwareVersion"></param>
+        <param name="Manufacturer"	  getval_func="CpeGetDeviceInfoManufacturer"></param>
+        <param name="SerialNumber"	  getval_func="CpeGetDeviceInfoSerialNumber"></param>
+        <param name="ManufacturerOUI" getval_func="CpeGetDeviceInfoManufacturerOUI"></param>
+        <param name="ProvisioningCode" rw="1" getval_func="CpeGetDeviceInfoProvisioningCode" setval_func="CpeSetDeviceInfoProvisioningCode"></param>
+        <param name="ProductClass" getval_func="CpeGetDeviceInfoProductClass"></param>
+        <param name="DeviceType" getval_func="CpeGetDeviceInfoDeviceType"></param>
+        <param name="ModelName" getval_func="CpeGetDeviceInfoModelName"></param>
+      </obj>
+      <obj name="ManagementServer">
+        <param name="ConnectionRequestURL"                                   getval_func="CpeGetManagementServerConnectionRequestURL"></param>
+        <param name="ConnectionRequestUsername"     rw="1"    noti_rw="1"    getval_func="CpeGetManagementServerConnectionRequestUsername" setval_func="CpeSetManagementServerConnectionRequestUsername"></param>
+        <param name="ConnectionRequestPassword"     rw="1"    noti_rw="1"    getval_func="CpeGetManagementServerConnectionRequestPassword" setval_func="CpeSetManagementServerConnectionRequestPassword"></param>
+        <param name="Username"                      rw="1"    noti_rw="1"    getval_func="CpeGetManagementServerUsername"          setval_func="CpeSetManagementServerUsername"></param>
+        <param name="Password"                      rw="1"    noti_rw="1"    getval_func="CpeGetManagementServerPassword"          setval_func="CpeSetManagementServerPassword"></param>
+        <param name="ParameterKey"                   getval_func="CpeGetManagementServerParameterKey"      setval_func="CpeSetManagementServerParameterKey"/>
+        <param name="URL"                           rw="1"    noti_rw="1"    getval_func="CpeGetManagementServerUrl"               setval_func="CpeSetManagementServerUrl"></param>
+        <param name="PeriodicInformEnable"          rw="1"  noti_rw="1"  type="3" getval_func="CpeGetManagementServerPeriodicInformEnable"      setval_func="CpeSetManagementServerPeriodicInformEnable"></param>
+        <param name="PeriodicInformInterval"        rw="1"  noti_rw="1"  type="2" getval_func="CpeGetManagementServerPeriodicInformInterval"    setval_func="CpeSetManagementServerPeriodicInformInterval"></param>
+        <param name="PeriodicInformTime"            rw="1"          type="4" getval_func="CpeGetManagementServerPeriodicInformTime"        setval_func="CpeSetManagementServerPeriodicInformTime"></param>
+      </obj>
+      <obj name="Time">
+        <param name="Enable"		  rw="1"  type="3"	 getval_func="CpeGetTimeEnable" 		 setval_func="CpeSetTimeEnable"></param>
+        <param name="NTPServer1"			  rw="1"	 getval_func="CpeGetTimeNTPServer1" 	 setval_func="CpeSetTimeNTPServer1"></param>
+        <param name="CurrentLocalTime" 	  type="4"			 getval_func="CpeGetTimeCurrentLocalTime"></param>
+      </obj>
+      <obj name="ObjTest"   rw="1"  addobj_func="TRF_Add_ObjTest" delobj_func="TRF_Del_ObjTest" refresh_func="TRF_Refresh_ObjTest">
+        <obj name="0">
+          <param name="TestEnabled" rw="1" type="3" getval_func="CpeGetObjTest_TestEnabled" setval_func="CpeSetObjTest_TestEnabled"/>
+        </obj>
+      </obj>
+      <obj name="WANDevice" refresh_func="CpeRefreshWANDevice">
+        <obj name="0">
+          <param name="WANConnectionNumberOfEntries" type="2" getval_func="GetWANConnectionNumberOfEntries"/>          
+          <obj name="WANConnectionDevice" rw="1" refresh_func="TRF_Refresh_WANConnection" addobj_func="TRF_Add_WANConnection"  delobj_func="TRF_Del_WANConnection">
+            <obj name="0">
+              <param name="WANIPConnectionNumberOfEntries" type="2" getval_func="CpeGetWANIPConnectionNumberOfEntries"/>
+              <param name="WANPPPConnectionNumberOfEntries" type="2" getval_func="CpeGetWANPPPConnectionNumberOfEntries"/>
+              <obj name="WANIPConnection" rw="1" addobj_func="TRF_Add_WANIPorPPPConnection"  delobj_func="TRF_Del_WANIPorPPPConnection"  refresh_func="TRF_Refresh_WANIPorPPPConnection" >
+                <obj name="0">
+                  <param name="Enable" rw="1" type="3" getval_func="CpeGetWANIPConnectionEnable" setval_func="CpeSetWANIPConnectionEnable"/>
+                  <param name="ExternalIPAddress" noti_rw="1" rw="1" getval_func="CpeGetWANIPConnection_ExternalIPAddress" setval_func="CpeSetWANIPConnection_ExternalIPAddress"/>
+                </obj>
+              </obj>
+            </obj>
+          </obj>
+        </obj>
+      </obj>
+      <obj name="LANDevice">
+        <obj name="1">
+          <param name="LANEthernetInterfaceNumberOfEntries" type="2" getval_func="CpeGetLANEthernetInterfaceNumberOfEntries"/>
+        </obj>
+      </obj>
+    </obj>
+  </trf>
+  
+  <devlib name="/system/lib/device.so"></devlib>
+  <cwmpenable name="dev_cwmp_enable"/>
+  <init name="dev_init"></init>  
+  <bootstrap name="dev_bootstrap"></bootstrap>  
+  <auth name="dev_get_auth"></auth>
+  <listenport name="dev_get_listenport"></listenport>
+  <urldnsresolve name="dev_url_dns_resolve"></urldnsresolve>
+  <wanparamname name="dev_get_wanparam_name"></wanparamname>  
+  <reboot name="dev_reboot"></reboot>
+  <factoryreset name="dev_factoryreset"></factoryreset>
+  <download name="dev_download"></download>
+  <acsstatus name="dev_set_acs_status"></acsstatus>
+  <cwmpstatus name="dev_set_cwmp_status"></cwmpstatus>
+  <dyninform name="dev_dyninform"></dyninform>
+  <upload name="dev_upload"></upload>
+  <debug name="dev_debug"/>
+ 
+  <informlist>
+    <inform name="InternetGatewayDevice.DeviceInfo.ModelName"/>
+    <inform name="InternetGatewayDevice.DeviceInfo.DeviceType"/>
+  </informlist>
+
+  <eventlist>
+    <event name="X CT-COM BIND"></event>
+  </eventlist>
+
+
+</TR069>
+
